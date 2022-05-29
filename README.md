@@ -6,3 +6,13 @@ Student Result management system
 User Name: admin 
 
 Password: pass
+
+Database MYSQL SCHEMAS : srm
+
+ use srm;
+ 
+ show tables;
+ 
+ select * from result;
+ 
+ select * from student;
