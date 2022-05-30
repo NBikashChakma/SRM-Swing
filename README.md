@@ -7,7 +7,12 @@ User Name: admin
 
 Password: pass
 
-Database MYSQL SCHEMAS : srm
+------------------------
+Database MYSQL SCHEMAS 
+-------------------------
+create database srm;
+
+show databases;
 
  use srm;
  
