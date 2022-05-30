@@ -1,0 +1,79 @@
+**********Windows Terminal*********** & Github Repository Command HTTPS Follow **********************
+PS C:\Users> cd D:\NetBeansProjects\srm32\
+
+PS D:\NetBeansProjects\EMS31> git status
+
+PS D:\NetBeansProjects\srm32> git init
+Reinitialized existing Git repository in D:/NetBeansProjects/srm32/.git/
+
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git commit -m "first commit"
+
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+
+PS D:\NetBeansProjects\EMS31> git commit -m "first commit"
+
+*** Please tell me who you are.
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+
+PS D:\NetBeansProjects\EMS31> git config --global user.email natunbikashc67@gmail.com
+PS D:\NetBeansProjects\EMS31> git config --global user.name NBikashChakma
+**************************************************************************
+
+PS D:\NetBeansProjects\srm32> git add .
+
+PS D:\NetBeansProjects\srm32> git commit -m "first commit"
+
+**************************************************************************
+
+PS D:\NetBeansProjects\srm32> git remote set-url origin https://github.com/NBikashChakma/SRM-Swing.git
+
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git status
+
+On branch main
+nothing to commit, working tree clean
+
+**************************************************************************
+
+PS D:\NetBeansProjects\srm32> git push -u origin main
+
+Enumerating objects: 101, done.
+Counting objects: 100% (101/101), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (98/98), done.
+Writing objects: 100% (101/101), 1.74 MiB | 456.00 KiB/s, done.
+Total 101 (delta 55), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (55/55), done.
+To https://github.com/NBikashChakma/SRM-Swing.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+********************DATABASE EXPORT Mysql FOLDER UPLOAD****************
+
+PS D:\NetBeansProjects\srm32> git add .
+
+PS D:\NetBeansProjects\srm32> git commit -m "second commit"
+
+[main 7ddf0c5] second commit
+ 2 files changed, 110 insertions(+)
+ create mode 100644 mysql/srm_result.sql
+ create mode 100644 mysql/srm_student.sql
+
+PS D:\NetBeansProjects\srm32> git push
+
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.48 KiB | 1.48 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/NBikashChakma/SRM-Swing.git
+   d8876da..7ddf0c5  main -> main
