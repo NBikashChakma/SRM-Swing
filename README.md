@@ -1,5 +1,5 @@
 # SRM-Swing
-Student Result management system
+Student Result management system - Java with Ant - Java Application
 
 1st Run index.java 
 
