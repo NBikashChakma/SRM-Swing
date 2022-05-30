@@ -77,3 +77,79 @@ Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/NBikashChakma/SRM-Swing.git
    d8876da..7ddf0c5  main -> main
+   
+   
+   ******************************Git Command.txt upload****************************************************
+   PS D:\NetBeansProjects\srm32> git status
+   
+Your branch is up to date with 'origin/main'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git Command.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git add
+
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git add --all
+
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git commit -am "first commit"
+
+[main d1056b7] first commit
+ create mode 100644 Git Command.txt
+ 
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git add file
+
+fatal: pathspec 'file' did not match any files
+
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git push
+
+To https://github.com/NBikashChakma/SRM-Swing.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/NBikashChakma/SRM-Swing.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git pull
+
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 27 (delta 15), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (27/27), 6.06 KiB | 6.00 KiB/s, done.
+From https://github.com/NBikashChakma/SRM-Swing
+   7ddf0c5..a34cdfd  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ README.md                              | 23 +++++++++++++++++++++++
+ {mysql => srm32-mysql}/srm_result.sql  |  0
+ {mysql => srm32-mysql}/srm_student.sql |  0
+ 3 files changed, 23 insertions(+)
+ create mode 100644 README.md
+ rename {mysql => srm32-mysql}/srm_result.sql (100%)
+ rename {mysql => srm32-mysql}/srm_student.sql (100%)
+ 
+**************************************************************************
+PS D:\NetBeansProjects\srm32> git push
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.45 KiB | 1.45 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/NBikashChakma/SRM-Swing.git
+   a34cdfd..33a94f0  main -> main
